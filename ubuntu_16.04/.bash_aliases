@@ -16,3 +16,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Check battery percentage
 alias battery='cat /sys/class/power_supply/BAT0/capacity'
+
+# ENCFS
+alias encfsall='$HOME/scripts/encfs_all.sh'
