@@ -164,6 +164,6 @@ function set-title() {
 
 # Hamachi List
 function hl() {
-  hamachi list | grep direct | awk '{printf "%-1s %-20s %-15s %-20s \n", $1,$3,$4,$11;}'
+  hamachi list | grep direct | awk '{printf "%-1s %-20s %-15s %-20s \n", $1,$3,$4,$11;}' | sort
 }
 
