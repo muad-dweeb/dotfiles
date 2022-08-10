@@ -67,3 +67,10 @@ complete -F _complete_ssh_hosts ssh
 
 # Git completion bash script
 source ~/.git-completion.bash
+
+# Sublime Text shortcut
+subl ()
+{
+    "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $1
+}
+export subl
