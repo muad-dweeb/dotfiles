@@ -26,9 +26,14 @@ shopt -s checkwinsize
 ##### User Settings #####
 
 # python setup related settings
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-#source /usr/local/bin/virtualenvwrapper.sh
+# Requirements:
+#    brew install python
+#    pip3 install virtualenv virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Hamachi List
 function hl() {
@@ -74,3 +79,4 @@ subl ()
     "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $1
 }
 export subl
+
