@@ -9,7 +9,7 @@ SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 for f in $(find ${SCRIPT_DIR}/osx -type f)
 do
     f_name=$(basename $f)
-    cmd="ln -s ${SCRIPT_DIR}/osx/${f_name} ${HOME}/$f_name "
+    cmd="ln -fs ${SCRIPT_DIR}/osx/${f_name} ${HOME}/$f_name"
     echo $cmd
     eval $cmd
 done
